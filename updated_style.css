@@ -1,7 +1,7 @@
 /* PC、スマホ共通スタイル */
 body {
     font-family: 'M PLUS 1','Noto Sans JP',"Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
-        sans-serif;
+        sans-serif;    
 }
 
 ul, ol {
@@ -20,6 +20,38 @@ p {
 #submit {
     margin-top: 50px;
 }
+
+#claim {
+    margin: 80px 0 10px 0;
+}
+
+#claim-message span {
+    display: block;
+    line-height: 5rem;
+    font-size: 2em;
+    text-align: center;
+}
+
+.more-link {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px; /* アイコンのためのスペースを確保 */
+    text-decoration: none;
+    color: #000; /* リンクの色 */
+}
+
+.more-link::before {
+    content: "\f105"; /* Font Awesomeのアイコンコード（例：右矢印） */
+    font-family: "Font Awesome 6 Free"; /* Font Awesomeのフォントファミリー */
+    font-weight: 900; /* Font Awesomeアイコンのスタイルを指定 */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* 縦方向の中央揃え */
+    font-size: 16px; /* アイコンのサイズ */
+    color: #000; /* アイコンの色 */
+}
+
 
 /*================
  PC用のスタイル
@@ -78,16 +110,19 @@ p {
     }
     #main-message {
         position: absolute;
-        background-color: #8B5E3C;
-        color: #F7F2ED;
-        border-radius: 20px;
-        height: 40%;
-        width: 90%;
+        /*background-color: #8B5E3C;*/
+        background-color:#EFEFEF;
+        /*color: #F7F2ED;*/
+        color: #000;
+        /*border-radius: 10px;*/
+        /*height: 80%;*/
+        height: 8rem;
+        width: 100%;
         z-index: 11;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        opacity: 0.9;
+        opacity: 0.8;
         text-align:center;
         display: flex;
         flex-direction: column;
@@ -106,12 +141,23 @@ p {
         margin: 10px 0 0 0;
         padding: 0 20px;
     }
+
+    #main-message span {
+        display: block;
+        /*line-height: 5rem;*/
+        /*font-size: 2em;*/
+        font-size: 4em;
+        text-align: center;        
+        /*font-weight: bold;*/
+    }
+
     #main-visual > img {
         width: 100%;
         height:700px;
         position: absolute;
         top: 0;
         z-index: 10;
+        opacity: 0.8;
     }
 
     /*見出し*/
@@ -128,11 +174,11 @@ p {
         font-size: 27px;
     }
 
-    /* プロダクト */
+    /* 活動紹介 */
     #activity {
         background-color: #EFE5DC;
         margin: 80px 0 80px 0;
-        padding: 10px 40px 0px 40px;
+        padding: 10px 40px 10px 40px;
     }
 
     /* 外枠 */
@@ -164,6 +210,15 @@ p {
         position: relative;
         height: 480px;
         margin-left: 20px;
+    }
+
+    #activity-top-img {
+        justify-content: center; /* 横方向の中央寄せ */
+        align-items: center; /* 縦方向の中央寄せ（オプション） */
+    }
+
+    #activity-top-img > div > img {
+        width: 200px;
     }
 
     /* 写真*/
@@ -204,7 +259,8 @@ p {
 
     /* もっと見るボタン */
     #activity-more {
-        margin: 0 auto -42px auto;
+        /*margin: 0 auto -42px auto;*/
+        justify-content: flex-end; /* コンテナ内の要素を右寄せ */
     }
 
     /* ABOUT US */
@@ -647,6 +703,13 @@ p {
     
     .activity-section3 {
         height: 250px;
+    }
+
+    .activity-exp {
+        align-self: center; 
+    }
+    .activity-exp > p{
+        font-size:18px;
     }
 
     .polaroid {
