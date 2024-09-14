@@ -21,17 +21,6 @@ p {
     margin-top: 50px;
 }
 
-#claim {
-    margin: 80px 0 10px 0;
-}
-
-#claim-message span {
-    display: block;
-    line-height: 5rem;
-    font-size: 2em;
-    text-align: center;
-}
-
 .more-link {
     position: relative;
     display: inline-block;
@@ -52,19 +41,10 @@ p {
     color: #000; /* アイコンの色 */
 }
 
-.activity-lead {
-    color:#444444;
-}
-
 .lead_on_bg {
     color:#5D4037;
 }
-.activity-exp > p {
-    color: #444444;
-}
-.activity-backcolor .activity-exp > p {
-    color:#5D4037;
-}
+
 /*================
  PC用のスタイル
 =================*/
@@ -186,204 +166,14 @@ p {
         font-size: 27px;
     }
 
-    /* 活動紹介 */
-    #activity {
-        background-color: #EFE5DC;
-        margin: 80px 0 80px 0;
-        padding: 10px 40px 10px 40px;
-    }
-
-    /* 外枠 */
-    #activity > div {
-        margin-top: 40px;
-        display: flex;
-    }
-
-    /* 左のカラム */
-    #activity-left {
-        width: 50%;
-        margin-right: 20px;
-    }
-
-    /* 右のカラム */
-    #activity-right {
-        width: 50%;
-        margin-left: 20px;
-        margin-top: 80px;
-    }
-
-    /* 写真＋説明の枠 */
-    #activity-left > div {
-        position: relative;
-        height: 480px;
-        margin-right: 20px;
-    }
-
-    #activity-right > div {
-        position: relative;
-        height: 480px;
-        margin-left: 20px;
-    }
-
-    #activity-top-img {
-        justify-content: center; /* 横方向の中央寄せ */
-        align-items: center; /* 縦方向の中央寄せ（オプション） */
-    }
-
-    #activity-top-img > div > img {
-        /*width: 200px;*/
-    }
-
-    /* 写真*/
-    .activity-photo {
-        width: 100%;
-    }
-
-    /* 説明文の枠 */
-    .activity-explain {
-        background-color: #F7F2ED;
-        position: absolute;
-        left: 0;
-        top: 280px;
-        margin: 0 40px 0 40px;
-        padding: 20px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    /* 説明文の英語 */
-    .activity-explain > span {
-        color: #8B5E3C;
-        font-weight: bold;
-        font-size: 16px;
-        margin: 0px;
-    }
-
-    /* 説明文の見出し */
-    .activity-explain > h3 {
-        font-size: 20px;
-        margin: 5px 0 5px 0;
-    }
-
-    /* 説明文 */
-    .activity-explain > p {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    /* もっと見るボタン */
-    #activity-more {
-        /*margin: 0 auto -42px auto;*/
-        justify-content: flex-end; /* コンテナ内の要素を右寄せ */
-    }
 
     /* ABOUT US */
-    #aboutus {
-        margin: 80px auto 80px auto;
+    #aboutus,#vision-mission,#aboutlogo {
+        margin: 80px auto;
     }
 
-    /* ３つの組織文化と写真を入れる枠 */
-    #aboutus > div {
-        display: flex;
-    }
 
-    /* 写真 */
-    .culture-img {
-        width: 100%;
-        align-self: flex-start;
-    }
-
-    .culture-img2 {
-        margin-top: 50px;
-        width: 100%;
-    }
-
-    /* 3つの組織文化の表 */
-    .culture-table {
-        margin-right: 50px;
-    }
-
-    /* 番号 */
-    .culture-num {
-        font-size: 80px;
-        color: #8B5E3C;
-        margin: 0 20px 0 0;
-    }
-
-    /* 組織文化英語 */
-    .culture-en {
-        color: #8B5E3C;
-        font-weight: bold;
-        font-size: 24px;
-        display: block;
-    }
-
-    /* 組織文化日本語 */
-    .culture-jp {
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    /* 説明文 */
-    .culture-description {
-        margin: 0;
-    }
-
-    /* ビジョン */
-    #vision {
-        margin: 80px auto 80px auto;
-    }
-
-    /* セクション内の外枠*/
-    #vision > div {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    /*7つの行動指針の枠*/
-    .vision-box {
-        width: 300px;
-        height: 300px;
-        margin-bottom: 30px;
-        position: relative;
-    }
-
-    .vision-box > img {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 30;
-    }
-
-    .vision-box > span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 31;
-        margin-right: 20px;
-    }
-
-    .vision-box > span > h4 {
-        color: #8B5E3C;
-        font-size: 19px;
-        margin: 80px 0 0 0;
-    }
-
-    .vision-box > span > h4::first-letter {
-        font-size: 40px;
-    }
-
-    .vision-box > span > h5 {
-        font-size: 20px;
-        margin: 0 0 0 0;
-    }
-
-    .vision-box > span > p {
-        margin: 10px 0 0 0;
-    }
+ 
 
     /*会社概要*/
     #company {
@@ -430,84 +220,8 @@ p {
         border-top-width: 1px;
         border-top-style: solid;
     }
-    
-    #company-table .cell ul {
-        padding-left: 30px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    
-    #company > iframe {
-        width: 100%;
-        height: 368px;
-        margin-top: 40px;
-    }
 
-    /* お問い合わせ */
-    #contact {
-        margin: 80px auto 80px auto;
-    }
 
-    /* 外枠 */
-    #contact > form > div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-bottom: 30px;
-    }
-
-    /* 左列　見出し */
-    .contact-heading {
-        width: 240px;
-        align-self: center;
-    }
-    /* 見出しのラベル */
-    .contact-label {
-        font-weight: bold;
-    }
-    /* 必須 */
-    .contact-span {
-        color: #ce2222;
-        margin: 0 0 0 20px;
-        font-weight: bold;
-    }
-    /* テキストボックス */
-    .contact-textbox {
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-bottom-width: 1px;
-        border-bottom-color: #707070;
-        border-style: solid;
-        background-color: #EFE5DC;
-        height: 56px;
-        width: 400px;
-    }
-
-    /* お問い合わせ内容のテキストエリア */
-    .contact-textarea {
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-bottom-width: 1px;
-        border-bottom-color: #707070;
-        background-color: #EFE5DC;
-        width: 400px;
-        height: 200px;
-    }
-
-    /* 個人情報の取り扱い */
-    details {
-        width: 700px;
-    }
-    details > div {
-        background-color: #EFE5DC;
-        padding: 20px;
-    }
-
-    details > div > span {
-        font-weight: bold;
-    }
 
     /* フッター */
     footer {
@@ -580,7 +294,7 @@ p {
     }
 
     /* プロダクトページ */
-    #activity-main {
+    #section-top {
         height: 246px;
         width: 100%;
         /*background-image: url("../image/26089.jpg");
@@ -592,7 +306,7 @@ p {
         border-bottom: 1px solid #ddd;
     }
 
-    #activity-title {
+    #section-top-title {
         /*background-color: #8B5E3C;*/
         /*width: 368px;*/
         /*color: #F7F2ED;*/
@@ -600,17 +314,17 @@ p {
         /*height: 296px;*/
         /*border-radius: 0 248px 248px 0;*/
         position: relative;
-        letter-spacing: 01em;
+        letter-spacing: 0.1em;
     }
-    #activity-title > h1 {
+    #section-top-title > h1 {
         /*position: absolute;
         top: 0;
         left: 100px;*/
-        font-size: 55px;
+        font-size: 45px;
         /*letter-spacing: 01em;*/
     }
 
-    #activity-title > span {
+    #section-top-title > span {
         /*position: absolute;
         top: 200px;*/
         /*left: 100px;*/
@@ -618,62 +332,46 @@ p {
         letter-spacing: 0.3em;
     }
 
-    #activity-title > div {
+    #section-top-title > div {
         position: absolute;
         top: 350px;
         left: 100px;
         font-size: 16px;
     }
 
-    .activity-section {
-        margin: 50px 0px;
-        padding: 0px 2rem;
-    }
-
-    .activity-backcolor {
-        background-color: #EFE5DC;
-    }
-
-    .activity-section > .activity-lead {
-        width: 100%;
-    }
-
-    .activity-section > div {
-        /*padding:10px;
-        background-color: #EFE5DC;
-        */
-    }
-
-    div.activity-exp {
-        align-self: center;  
+    .aboutus-contents > p{
+        font-size: 1.2rem;
+        line-height: 1.6;
     }
 
     /* タイプ1 */
-    .activity-type1 {
+    .aboutlogo-content {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
     }
 
-    .activity-type1 > div.activity-exp {
+    .aboutlogo-content > div.aboutlogo-exp {
         flex: 1;
         margin-right: 50px; /* 画像との間にスペースを確保 */     
     }
 
-    .activity-type1 > div > img {
+    .aboutlogo-content > div > img {
         width: 350px;
         max-width: 100%; /* 画面サイズに応じて画像が収まるように */
         height: auto; /* 画像のアスペクト比を維持 */
         flex-shrink: 0;
     }
-    .activity-type1 > div.activity-img-area {
+    .aboutlogo-content > div.aboutlogo-img-area {
         width: 550px;
         max-width: 100%; /* 画面サイズに応じて画像が収まるように */
         height: auto; /* 画像のアスペクト比を維持 */
         flex-shrink: 0;
         position: relative;
     }
-
+    .aboutlogo-exp-lead {
+        font-weight:bold;
+    }
     .activity-img2{
         position: relative;
         width: 600px; /* コンテナの幅を画像に合わせて調整 */
@@ -861,7 +559,7 @@ p {
     }
 
     .polaroid {
-        max-width: 300px; /* ポラロイドの幅 */
+        max-width: 400px; /* ポラロイドの幅 */
         padding: 10px;
         background: white;
         box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
@@ -884,13 +582,6 @@ p {
     .polaroid-right {
         transform: rotate(5deg); /* 画像を少し傾ける */
     }    
-    .caption {
-        padding: 10px 0 5px 0;
-        font-size: 14px;
-        color: #555;
-        word-wrap: break-word; /* テキストの改行を有効にする */
-        white-space: normal; /* テキストを自動改行させる */        
-    }
 }
 
 /*====================

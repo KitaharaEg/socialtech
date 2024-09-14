@@ -231,7 +231,7 @@ p {
     }
 
     #activity-top-img > div > img {
-        /*width: 200px;*/
+        width: 200px;
     }
 
     /* 写真*/
@@ -861,7 +861,7 @@ p {
     }
 
     .polaroid {
-        max-width: 300px; /* ポラロイドの幅 */
+        max-width: 400px; /* ポラロイドの幅 */
         padding: 10px;
         background: white;
         box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
@@ -888,8 +888,6 @@ p {
         padding: 10px 0 5px 0;
         font-size: 14px;
         color: #555;
-        word-wrap: break-word; /* テキストの改行を有効にする */
-        white-space: normal; /* テキストを自動改行させる */        
     }
 }
 
