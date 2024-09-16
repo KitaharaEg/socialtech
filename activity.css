@@ -62,8 +62,13 @@ p {
 .activity-exp > p {
     color: #444444;
 }
-.activity-backcolor .activity-exp > p {
+.activity-backcolor .activity-exp > p,.activity-backcolor .activity-exp > div > h3 {
     color:#5D4037;
+}
+h3.activity-h3 > i::after {
+    content: '\00a0';
+    display: inline-block;
+    width: 0.5em; /* 必要な余白に応じて調整 */
 }
 /*================
  PC用のスタイル
